@@ -1,0 +1,12 @@
+
+server:
+    port: 8093
+
+spring:
+    application:
+        name: jazzified-service-gateway
+    config:
+        import: configserver:http://localhost:8888
+    profiles:
+        active: dev
+
